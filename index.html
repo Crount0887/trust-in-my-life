@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      
+      <div class="tools">
+        <button id="circleBrush">Circle Brush</button>
+        <button id="pen">Pen Brush</button>
+        <button id="squareBrush">Square Brush</button>
+        <button id="eraser">Eraser</button>
+      </div>
+
+      <aside>
+        <button id="clearAll">Clear</button>
+        <button id="download">Save</button>
+      </aside>
+    
+    </div>
+    
+    <div class="options">
+      <label for="bgColor">BG Color:</label>
+      <input type="color" value="#000000" id="bgColor">
+      
+      <label for="colorInput">Color:</label>
+      <input type="color" value="#000000" id="colorInput">
+      
+      <label for="range">Weight:</label>
+      <input type="range" min="10" max="100" value="10" step="2" id="weight">
+      
+      <label class="switch">
+        <span class="nightMode">Night Mode</span>
+        <input type="checkbox" class="toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    
+    
+    <script src="sketch.js"></script>
+    <script src="circleBrush.js"></script>
+    <script src="pen.js"></script>
+    <script src="squareBrush.js"></script>
+    <script src="eraser.js"></script>
+    <script src="color.js"></script>
+    
+  </body>
+</html>
